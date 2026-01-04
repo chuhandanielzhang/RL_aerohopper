@@ -1,0 +1,32 @@
+RL_aerohopper 文件列表
+=====================
+
+核心环境代码:
+- hybrid_hopper/hybrid_hopper_env.py          # Hybrid Hopper环境实现
+- hybrid_hopper/hybrid_hopper_config.py       # 环境配置
+- hybrid_hopper/velocity_tracking.py          # 速度跟踪任务
+- hybrid_hopper/__init__.py
+
+基础依赖:
+- go1_gym/envs/base/legged_robot.py           # 腿部机器人基类
+- go1_gym/envs/base/legged_robot_config.py    # 配置基类
+- go1_gym/envs/base/base_task.py              # 基础任务类
+- go1_gym/envs/base/curriculum.py             # 课程学习
+- go1_gym/envs/wrappers/history_wrapper.py    # 历史包装器
+
+Play和录制脚本:
+- play_hybrid_record.py                       # 录制hybrid_hopper_play.mp4的脚本
+- play_hybrid_hopper.py                       # Play脚本
+- play_hybrid_hopper.sh                        # Play shell脚本
+
+训练和测试脚本:
+- run_hybrid_hopper_training.sh               # 训练脚本
+- run_hybrid_hopper_free_fall.sh              # 自由落体测试
+- visualize_hybrid_hopper_gui.sh              # GUI可视化
+
+演示视频:
+- hybrid_hopper_play.mp4                      # RL训练的带旋翼Hopper演示视频
+
+文档:
+- README.md                                   # 说明文档
+- FILE_LIST.txt                               # 本文件列表
